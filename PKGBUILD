@@ -1,6 +1,6 @@
 pkgname=kosherlinux-git
 gitrepo="https://github.com/s1522711/Kosher-Linux.git"
-pkgver=d7ce3dc
+pkgver=f96b1e6
 pkgrel=1
 arch=('x86_64')
 pkgdesc="KosherLinux executable and systemd service"
@@ -9,6 +9,7 @@ depends=('systemd')
 makedepends=('gcc' 'cmake' 'make' 'git')
 source=("git+$gitrepo")
 sha256sums=("SKIP")
+install=kosherlinux.install
 
 pkgver() {
     cd "$srcdir/Kosher-Linux"
@@ -26,4 +27,11 @@ package() {
     # Install the executable and service file
     install -Dm755 "$srcdir/Kosher-Linux/build/Kosher-Linux" "$pkgdir/usr/bin/KosherLinux"
     install -Dm644 "$srcdir/Kosher-Linux/kosherlinux.service" "$pkgdir/usr/lib/systemd/system/kosherlinux.service"
+
+    # Remove any debug-related files that may be generated
+    rm -rf "$pkgdir/usr/lib/debug"
 }
+
+# Disable the creation of the debug package
+options=('!debug')
+
