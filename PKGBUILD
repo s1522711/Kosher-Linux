@@ -1,13 +1,15 @@
+# Maintainer: Germani <s1522711@protonmail.com>
+
 pkgname=kosherlinux-git
-gitrepo="https://github.com/s1522711/Kosher-Linux.git"
-pkgver=f96b1e6
+_gitrepo="https://github.com/s1522711/Kosher-Linux.git"
+pkgver=8dd80af
 pkgrel=1
 arch=('x86_64')
 pkgdesc="KosherLinux executable and systemd service"
 license=('GPL')
 depends=('systemd')
 makedepends=('gcc' 'cmake' 'make' 'git')
-source=("git+$gitrepo")
+source=("git+$_gitrepo")
 sha256sums=("SKIP")
 install=kosherlinux.install
 
