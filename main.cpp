@@ -11,17 +11,17 @@ int main() {
         return 0;
     }
 
-    // if its a friday, check if the time is before 3:00 PM
+    // if its a friday, check if the time is before 5:00 PM
     if (ltm->tm_wday == 5) {
-        if (ltm->tm_hour < 15) {
+        if (ltm->tm_hour < 17) {
             std::cout << "not the weekend" << std::endl;
             return 0;
         }
     }
 
-    // if its a saturday, check if the time is after 11:00 AM
+    // if its a saturday, check if the time is after 6:00 pm
     if (ltm->tm_wday == 6) {
-        if (ltm->tm_hour < 11) {
+        if (ltm->tm_hour < 18) {
             std::cout << "not the weekend" << std::endl;
             return 0;
         }
