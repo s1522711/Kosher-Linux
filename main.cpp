@@ -29,6 +29,6 @@ int main() {
 
     // if its the weekend, shut down the computer
     std::cout << "shutting down" << std::endl;
-    system("shutdown 5");
+    system("systemctl poweroff");
     return 0;
 }
