@@ -1,0 +1,14 @@
+[Unit]
+Description=KosherLinux Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/KosherLinux
+RemainAfterExit=yes
+User=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

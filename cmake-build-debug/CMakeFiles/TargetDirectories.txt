@@ -1,0 +1,3 @@
+/home/tamir/CLionProjects/Kosher-Linux/cmake-build-debug/CMakeFiles/Kosher-Linux.dir
+/home/tamir/CLionProjects/Kosher-Linux/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tamir/CLionProjects/Kosher-Linux/cmake-build-debug/CMakeFiles/rebuild_cache.dir

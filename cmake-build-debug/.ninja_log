@@ -1,0 +1,7 @@
+# ninja log v6
+1	67	1741448494868720239	CMakeFiles/Kosher-Linux.dir/main.cpp.o.ddi	34c68aa543b4259a
+67	71	1741448494939204078	CMakeFiles/Kosher-Linux.dir/CXX.dd	567d227bd33c3bb5
+67	71	1741448494939204078	/home/tamir/CLionProjects/Kosher-Linux/cmake-build-debug/CMakeFiles/Kosher-Linux.dir/CXXModules.json	567d227bd33c3bb5
+67	71	1741448494939204078	CMakeFiles/Kosher-Linux.dir/main.cpp.o.modmap	567d227bd33c3bb5
+71	435	1741448494939204078	CMakeFiles/Kosher-Linux.dir/main.cpp.o	af1d0dffab62b91a
+436	483	1741448495303997657	Kosher-Linux	aeaf6f4d434af541

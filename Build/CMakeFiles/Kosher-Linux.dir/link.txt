@@ -1,0 +1,1 @@
+/sbin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/Kosher-Linux.dir/link.d "CMakeFiles/Kosher-Linux.dir/main.cpp.o" -o Kosher-Linux
